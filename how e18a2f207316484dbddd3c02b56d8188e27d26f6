@@ -1,0 +1,100 @@
+[33mcommit 291f07b66f99c866a1635d39012368925904df1d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Nikka Caldito <nikkacaldito6@gmail.com>
+Date:   Wed Oct 25 12:02:13 2023 +0800
+
+    Added initial files to the project
+
+[33mcommit 7cad4f7270a0b8864088eb3ca320617c8db712c3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 20:20:28 2023 +0800
+
+    Delete hero.sql
+    
+    deleted
+
+[33mcommit 1f7e7de993311b0074267d853422da5498bf139f[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 13:51:20 2023 +0800
+
+    Update README.md
+    
+    updated
+
+[33mcommit de8585f73fc81ce6e633ae781545de8d057a231d[m
+Merge: 55e8bc6 2ba1e4b
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 11:33:41 2023 +0800
+
+    Merge branch 'main' of https://github.com/Daryl23/Activity3.2_YourName
+
+[33mcommit 2ba1e4b86c46aec009253d6593315180d5e62beb[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 11:33:06 2023 +0800
+
+    Update README.md
+    
+    updated
+
+[33mcommit 55e8bc60ce6d487e56d6b44a97b834193bc04f4e[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 11:31:15 2023 +0800
+
+    Initial commit
+
+[33mcommit 14880195f46340a2f3d9d28abfe694bc7c71ed9d[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Mon Oct 23 11:09:07 2023 +0800
+
+    Update README.md
+    
+    updated README.md
+
+[33mcommit dbe2bca1eabb979516b8f1dbf9dab2ff44c8ddef[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:46:24 2023 +0800
+
+    Update instructions.txt
+    
+    add title
+
+[33mcommit e18a2f207316484dbddd3c02b56d8188e27d26f6[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:42:40 2023 +0800
+
+    updated markdown and add additional git commands
+
+[33mcommit e3ad0b050bbd815cbced85a5c346ce0e4a849d92[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:37:56 2023 +0800
+
+    Update README.md
+    
+    updated the title
+
+[33mcommit b8210a42e9beaa389b047dd30143ff23c5f9b103[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:35:56 2023 +0800
+
+    Update README.md
+    
+    add title to README.md
+
+[33mcommit 92cbd753a56c8ce08c0962c530f2431109c12e7b[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:34:43 2023 +0800
+
+    Update instructions.txt
+    
+    updated instructions.txt with comment
+
+[33mcommit 14ee50a6a189f51d26f85a0658c9fa1df0f6a8b8[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:32:17 2023 +0800
+
+    updated README.md with instruction to create new remote repository
+
+[33mcommit 3644ea6d7f1e397c6b7c582ac37e5101f76693db[m
+Author: Daryl23 <tq_daryl@yahoo.com>
+Date:   Sun Oct 22 16:28:02 2023 +0800
+
+    initial commit
