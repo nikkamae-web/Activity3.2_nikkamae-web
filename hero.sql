@@ -1,5 +1,5 @@
 CREATE DATABASE hero;
-CREATE DATABASE hero001
+
 
 --1.	Create new branch named "feat/create-tables"
 
@@ -171,3 +171,9 @@ SELECT p.player_name, h.hero_name
 FROM player p
 JOIN hero h ON p.hero_id = h.hero_id
 WHERE h.is_active = true;
+
+-- List heroes classified as archers
+SELECT hero_name
+FROM hero
+WHERE class_id = (SELECT class_id FROM class WHERE class_name = 'Archers');
+
