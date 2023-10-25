@@ -175,5 +175,5 @@ WHERE h.is_active = true;
 -- List heroes classified as archers
 SELECT hero_name
 FROM hero
-WHERE class_id = (SELECT class_id FROM class WHERE class_name = 'Warrior');
+WHERE class_id = (SELECT class_id FROM class WHERE class_name = 'Archers');
 
