@@ -157,3 +157,17 @@ VALUES
 -- Add the 'item_price' column to the 'item' table
 ALTER TABLE item
 ADD item_price DECIMAL(10, 2);
+-- Update the state of hero 1 to inactive
+UPDATE hero
+SET is_active = false
+WHERE hero_id = 1;
+
+-- Delete the item associated with hero 1
+DELETE FROM heroitem
+WHERE hero_id = 1;
+
+-- List player names and their corresponding hero names for active players
+SELECT p.player_name, h.hero_name
+FROM player p
+JOIN hero h ON p.hero_id = h.hero_id
+WHERE h.is_active = true;
