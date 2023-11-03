@@ -1,5 +1,5 @@
 CREATE DATABASE hero;
-CREATE DATABASE hero001
+
 
 --1.	Create new branch named "feat/create-tables"
 
@@ -157,3 +157,31 @@ VALUES
 -- Add the 'item_price' column to the 'item' table
 ALTER TABLE item
 ADD item_price DECIMAL(10, 2);
+-- Update the state of hero 1 to inactive
+UPDATE hero
+SET is_active = false
+WHERE hero_id = 1;
+
+-- Delete the item associated with hero 1
+DELETE FROM heroitem
+WHERE hero_id = 1;
+
+-- List player names and their corresponding hero names for active players
+SELECT p.player_name, h.hero_name
+FROM player p
+JOIN hero h ON p.hero_id = h.hero_id
+WHERE h.is_active = true;
+
+-- List heroes classified as archers
+SELECT hero_name
+FROM hero
+WHERE class_id = (SELECT class_id FROM class WHERE class_name = 'Archers');
+
+
+-- Retrieve the average player level for each class, arranged in descending order from the highest level to the lowest
+SELECT c.class_name, AVG(p.player_level) AS average_level
+FROM class c
+LEFT JOIN hero h ON c.class_id = h.class_id
+LEFT JOIN player p ON h.hero_id = p.hero_id
+GROUP BY c.class_name
+ORDER BY average_level DESC;
