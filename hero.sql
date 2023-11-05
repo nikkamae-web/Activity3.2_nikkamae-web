@@ -87,7 +87,7 @@ VALUES
 	(112,'Archers', 'Precise Shoot');
     (110, 'Wizard', 'Masters of arcane magic'),
 	(111,'Archers', 'Rapid Shoot'),
-	(112,'Archers', 'Precise Shoot');
+	(113,'Archers', 'Precise Shoot');
 
 -- Insert data into the Item table
 INSERT INTO Item (item_id, item_name, item_description, item_type)
