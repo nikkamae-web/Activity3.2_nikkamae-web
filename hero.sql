@@ -3,6 +3,8 @@ CREATE DATABASE hero;
 
 
 
+
+
 --1.	Create new branch named "feat/create-tables"
 
 CREATE TABLE IF NOT EXISTS public.class
@@ -88,6 +90,9 @@ VALUES
     (110, 'Wizard', 'Masters of arcane magic'),
 	(111,'Archers', 'Rapid Shoot'),
 	(112,'Archers', 'Precise Shoot');
+    (110, 'Wizard', 'Masters of arcane magic'),
+	(111,'Archers', 'Rapid Shoot'),
+	(112,'Archers', 'Precise Shoot');
 
 -- Insert data into the Item table
 INSERT INTO Item (item_id, item_name, item_description, item_type)
@@ -104,12 +109,24 @@ VALUES
     (110, 'Feather of Heaven', 'Increases attack speed', 'Weapon'),
 	(111,'Wings', 'Rapid Shoot', 'Weapon'),
 (112,'Archer', 'Precise Shoot', 'Weapon');
+    (110, 'Feather of Heaven', 'Increases attack speed', 'Weapon'),
+	(111,'Wings', 'Rapid Shoot', 'Weapon'),
+(112,'Archer', 'Precise Shoot', 'Weapon');
 -- Insert data into the Hero table
 INSERT INTO Hero (hero_id, hero_name, class_id, is_active)
 VALUES
     (1, 'Aldous', 101, true),
     (2, 'Karina', 102, true),
     (3, 'Gusion', 103, false),
+    (4, 'Layla', 104, true),
+    (5, 'Selena', 105, true),
+    (6, 'Hayabusa', 106, false),
+    (7, 'Franco', 107, true),
+    (8, 'Fanny', 108, true),
+    (9, 'Leomord', 109, false),
+    (10, 'Chou', 110, true),
+    (11, 'Archers', 111, true),
+    (12, 'Archers', 112, false);
     (4, 'Layla', 104, true),
     (5, 'Selena', 105, true),
     (6, 'Hayabusa', 106, false),
@@ -164,6 +181,10 @@ VALUES
 	(11, 11, 111),  -- Archers has Precise Shot
 	(12,12, 112); -- Archers has Rapid Fire
 	
+    (10, 10, 110),  -- Chou has Feather of Heaven
+	(11, 11, 111),  -- Archers has Precise Shot
+	(12,12, 112); -- Archers has Rapid Fire
+	
 -- Add the 'item_price' column to the 'item' table
 ALTER TABLE item
 ADD item_price DECIMAL(10, 2);
@@ -187,6 +208,10 @@ SELECT h.hero_name
 FROM hero h
 INNER JOIN class c ON h.class_id = c.class_id
 WHERE c.class_name = 'Archers';
+SELECT h.hero_name
+FROM hero h
+INNER JOIN class c ON h.class_id = c.class_id
+WHERE c.class_name = 'Archers';
 
 
 -- Retrieve the average player level for each class, arranged in descending order from the highest level to the lowest
@@ -196,6 +221,16 @@ LEFT JOIN hero h ON c.class_id = h.class_id
 LEFT JOIN player p ON h.hero_id = p.hero_id
 GROUP BY c.class_name
 ORDER BY average_level DESC;
+
+-- Retrieve the average player level for each class, arranged in descending order
+SELECT c.class_name, AVG(p.player_level) AS avg_player_level
+FROM class c
+JOIN hero h ON c.class_id = h.class_id
+JOIN player p ON h.hero_id = p.hero_id
+GROUP BY c.class_name
+ORDER BY avg_player_level DESC;
+
+
 
 -- Retrieve the average player level for each class, arranged in descending order
 SELECT c.class_name, AVG(p.player_level) AS avg_player_level
